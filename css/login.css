@@ -58,3 +58,12 @@ font-size: 20px;
     border-radius: 5px;
     padding: 10px;
 }
+.forget{
+    position: relative;
+    top: -9%;
+    right: 33%;
+    font-weight: 800;
+}
+input ,button{
+    font-family: 'Tajawal';
+}
