@@ -9,7 +9,7 @@
     <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
     <link rel="stylesheet" href="../assets/css/font-awesome.css">
     <link rel="stylesheet" href="../assets/css/login.css">
-
+    <link rel="stylesheet" href="../assets/css/signup.css">
 
 
     <title>E-Library</title>
@@ -1276,7 +1276,7 @@
                     <button class="loginbut">تسجيل الدخول</button>
                     <div class="down">
                         <p >ليس لديك حساب</p>
-                        <a href="../templates/signup.html" class="createAccount" >إنشاء حساب جديد</a>
+                        <a class="createAccount" id="createAccount">إنشاء حساب جديد</a>
                     </div>
                    
                 </div>
@@ -1285,6 +1285,54 @@
             </form>
         </div>
     </section>
+
+
+    <section id="signup">
+        <form action="">
+            <div class="top">
+                <h2>انشاء حساب</h2>
+                <input class="num" type="number" placeholder="رقم الجوال">
+                <input class="prenum" type="number" placeholder="+970">
+                <br> <small>سوف نرسل لك <b>
+
+                        رمز التحقق عن طريق رسالة نصية
+                    </b>
+                </small>
+            </div>
+            <div class="mid">
+                <input type="button" value="ارسال رمز التحقق">
+                <input type="text" placeholder="الاسم الاول">
+                <input type="text" placeholder="اسم العائلة">
+                <input type="text" placeholder="البريد الالكتروني">
+                <input type="text" placeholder="تاكيد البريد الالكتروني">
+                <input type="text" placeholder="كلمة السر">
+            </div>
+            <div class="down">
+
+                <input class="checkbox1" type="checkbox" checked>
+                <p>اوافق على
+                    <span>
+                        الشروط و الاحكام
+                    </span>
+                </p>
+                <input class="checkbox2" type="checkbox" checked>
+                <p>التسجيل للانضمام للنشرة البريدية</p>
+                <input type="button" value="انشاء حساب">
+            </div>
+            <div class="downdown">
+                <p>
+                    <span>
+                        لديك حساب ؟
+
+                    </span>
+                    <a>
+                        تسجيل الدخول >
+                    </a>
+                </p>
+            </div>
+        </form>
+    </section>
+
 
 <script src="../assets/js/js.js"></script>
 </body>
