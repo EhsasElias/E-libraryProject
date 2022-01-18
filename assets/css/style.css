@@ -1,0 +1,501 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    direction: rtl;
+}
+body{
+    font-family: 'Tajawal';
+    width: 100%;
+   
+    }
+@font-face {
+    font-family: 'Tajawal';
+    src: url("../fonts/Tajawal-Regular.ttf");
+}
+
+nav{
+    background-color: #f9fafc;
+}
+nav div{
+    display: flex;
+    justify-content: center;
+}
+nav div a{
+    text-decoration: none;
+    display: block;
+    color: inherit;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 400;
+    border-right: 1px solid #e5e9f2;
+}
+nav div a:first-child{
+    font-weight: 600;
+    border-right: none;
+}
+nav div a:last-child{
+    font-weight: 600;
+}
+.language{
+   display: flex; 
+   align-items: center;
+}
+.language p{
+    padding: 0 8px;
+}
+nav div a span{
+    padding: 10px;
+}
+.header-bottom{
+    display: flex;
+    justify-content: center;
+    padding: 10px 90px;
+    
+}
+.header-bottom div:first-child{
+display: flex;
+width: 100%;
+
+
+}
+.header-bottom img{
+    display: block;
+    
+   
+}
+.search-div{
+    
+    margin: 15px;
+    
+    display: inline-flex;
+    height: 100%;
+    font-size: 25px;
+}
+.search-div input{
+    width: 57vw;
+    border: none;
+    background-color: #eff2f7;
+    padding: 10px;
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 50px;
+}
+.search-div button{
+    border: none;
+    background-color: #eff2f7;
+    padding: 10px;
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 50px;
+}
+.fa-shopping-cart{
+    border-radius: 50px;
+    margin-right: 35px;
+}
+
+.uperfoter{
+    padding: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #333333;
+    color: #eff2f7;
+}
+.uperfoter h4{
+    padding: 8px;
+    border-bottom: 1px solid #444;
+}
+
+.cotact-icons a{
+    color: inherit;
+    text-decoration: none;
+
+}
+form{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    margin: 5px;
+    background-color: #484848;
+    border-radius: 5px;
+    
+}
+form input{
+width: 100%;
+padding: 10px;
+border-radius: 5px;
+border:none;
+font-family: 'Tajawal';
+}
+form button{
+    font-family: 'Tajawal';
+    margin: 5px 0;
+    margin-right: auto;
+    padding: 10px;
+    font-size: 18px;
+    border:none;
+    border-radius: 5px;
+}
+.fonts{
+    width: 100%;
+}
+.fonts h4, .fonts div{
+    width: 22%;
+}
+.down{
+    width: 100%;
+    background-color: #e6e6e6;
+}
+.down-footer{
+    
+    display: flex;
+    justify-content: space-between;
+    padding: 45px;
+    width: 90%;
+    margin-right: auto;
+}
+form{
+    position: relative;
+}
+form .fa-lock{
+    color: #484848;
+    opacity: 0.5;
+    position: absolute;
+    font-size: 23px;
+    left: 20px;
+    top: 20px;
+}
+
+
+/* SLIDER */
+.CSSgal {
+    direction: ltr;
+	position: relative;
+	overflow: hidden;
+	height: 100%; /* Or set a fixed height */
+    overflow: hidden;
+    margin: 1.5em 0;
+}
+
+
+
+.CSSgal .slider {
+	height: 80%;
+	white-space: nowrap;
+	font-size: 0;
+	transition: 0.8s;
+}
+
+
+
+.CSSgal .slider > * {
+	font-size: 1rem;
+	display: inline-block;
+	white-space: normal;
+	vertical-align: top;
+	height: 100%;
+	width: 100%;
+	background: none 50% no-repeat;
+	background-size: cover;
+}
+.CSSgal img{
+    width: 90%;
+    height: 60vh;
+}
+/* PREV/NEXT, CONTAINERS & ANCHORS */
+
+.CSSgal .prevNext {
+	position: absolute;
+	z-index: 1;
+	top: 40%;
+	width: 100%;
+	height: 0;
+}
+
+.CSSgal .prevNext > div+div {
+	visibility: hidden; /* Hide all but first P/N container */
+}
+
+.CSSgal .prevNext a {
+    vertical-align: middle;
+    fill: rgba(0,0,0,.5);
+    
+    font-size: 5em;
+	position: absolute;
+	width:40px;
+	height:40px;
+	text-align: center;
+	transition: 0.3s;
+    
+	left: 9%;
+	
+    
+}
+
+.CSSgal .prevNext a+a {
+	left: 88%;
+	right: 0;
+}
+
+/* NAVIGATION */
+
+.CSSgal .bullets {
+	position: absolute;
+	z-index: 2;
+	bottom: 0;
+	padding: 10px 0;
+	width: 100%;
+	text-align: center;
+}
+.CSSgal .bullets > a {
+	display: inline-block;
+	width:15px;
+	height:15px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    background: rgba(0,0,0,.3);
+	text-decoration: none;
+	text-align: center;
+	transition: 0.3s;
+}
+.CSSgal .bullets > a+a {
+	background: white; /* Dim all but first */
+}
+.CSSgal .bullets > a:hover {
+	background: white !important;
+}
+
+/* NAVIGATION BUTTONS */
+/* ALL: */
+.CSSgal >s:target ~ .bullets >* {      background: rgba(255, 255, 255, 0.5);}
+/* ACTIVE */
+#s1:target ~ .bullets >*:nth-child(1) {background: white}
+#s2:target ~ .bullets >*:nth-child(2) {background: white}
+#s3:target ~ .bullets >*:nth-child(3) {background: white}
+#s4:target ~ .bullets >*:nth-child(4) {background: white}
+#s5:target ~ .bullets >*:nth-child(5) {background: white}
+#s6:target ~ .bullets >*:nth-child(6) {background: white}
+#s7:target ~ .bullets >*:nth-child(7) {background: white}
+/* More slides? Add here more rules */
+
+/* PREV/NEXT CONTAINERS VISIBILITY */
+/* ALL: */
+.CSSgal >s:target ~ .prevNext >* {      visibility: hidden;}
+/* ACTIVE: */
+#s1:target ~ .prevNext >*:nth-child(1) {visibility: visible;}
+#s2:target ~ .prevNext >*:nth-child(2) {visibility: visible;}
+#s3:target ~ .prevNext >*:nth-child(3) {visibility: visible;}
+#s4:target ~ .prevNext >*:nth-child(4) {visibility: visible;}
+#s5:target ~ .prevNext >*:nth-child(5) {visibility: visible;}
+#s6:target ~ .prevNext >*:nth-child(6) {visibility: visible;}
+#s7:target ~ .prevNext >*:nth-child(7) {visibility: visible;}
+/* More slides? Add here more rules */
+
+/* SLIDER ANIMATION POSITIONS */
+
+#s1:target ~ .slider {transform: translateX(   0%); -webkit-transform: translateX(   0%);}
+#s2:target ~ .slider {transform: translateX(-100%); -webkit-transform: translateX(-100%);}
+#s3:target ~ .slider {transform: translateX(-200%); -webkit-transform: translateX(-200%);}
+#s4:target ~ .slider {transform: translateX(-300%); -webkit-transform: translateX(-300%);}
+#s5:target ~ .slider {transform: translateX(-400%); -webkit-transform: translateX(-400%);}
+#s6:target ~ .slider {transform: translateX(-500%); -webkit-transform: translateX(-500%);}
+#s7:target ~ .slider {transform: translateX(-600%); -webkit-transform: translateX(-600%);}
+/* More slides? Add here more rules */
+
+
+/* YOU'RE THE DESIGNER! 
+   ____________________
+   All above was mainly to get it working :)
+   CSSgal CUSTOM STYLES / OVERRIDES HERE: */
+
+.CSSgal{
+	color: #fff;	
+	text-align: center;
+}
+
+.CSSgal a {
+	border-radius: 5px;
+	margin: 0 3px;
+	color: rgba(0,0,0,0.8);
+	text-decoration: none;
+}
+.categoriesSec{
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
+}
+.categoriesSec aside{
+    width: 23%;
+}
+
+aside .bookLinks a{
+    text-decoration: none;
+    color: blue;
+    
+    
+}
+.categories-name h1{
+    color: #285c15;
+    border: 1px solid #285c15;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+aside .resultDeatails .results{
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    background-color: #285c15;
+    color: #edf6ff;
+    padding: 6px;
+}
+aside .resultDeatails .bookDetails{
+    background-color: #edf6ff;
+    color: #999999;
+    padding: 6px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+aside .resultDeatails .bookDetails span{
+   display: block;
+}
+aside .prograssDetails{
+    display: flex;
+    padding-top: 20px;
+    align-items: center;
+    width: 90%;
+}
+aside .prograssDetails button{
+    height: 15px;
+    width: 15px;
+    background-color: red;
+    border: none;
+}
+aside .prograssDetails div{
+    width: 100%;
+    height: 10px;
+    background-color: #999999;
+}
+aside .priceDetaile{
+    display: flex;
+    width: 100%;
+   padding: 5px 20px;
+   color: #999999;
+    justify-content: space-between;
+}
+.productImgs{
+    justify-content: center;
+   display: flex;
+   flex-wrap: wrap;
+   width: 77%;
+ 
+}
+.productImgs .storBy{
+   margin-right: auto;
+   width: 100%;
+}
+.storBy select{
+   width:  150px;
+   font-family: 'Tajawal';
+}
+.storByDiv{
+    display: flex;
+    justify-content: end;
+}
+.booksimgs{
+    display: flex;
+    flex-wrap: wrap;
+}
+.bookRow1{
+    width: 98%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-right: auto;
+    
+}
+.bookRow1 .bookCard-v1{
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    text-align: center;
+    width: 24%;
+    margin: 5px 0;
+    
+}
+.bookCard-v1 h3{
+    display: flex;
+    justify-content: center;
+}
+.bookCard-v1 .cost{
+    color: red;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top:20px;
+}
+.bookCard-v1 .taxDetails{
+    color: #ccc;
+    font-size: 10px;
+    
+}
+.bookCard-v1 .otherCopies span:last-child{
+color: blue;
+font-weight: 600;
+}
+.bookCard-v1 .bookRefer{
+display: flex;
+justify-content: space-around;
+align-items: center;
+padding: 10px;
+
+}
+
+.bookRefer .bookReferFont{
+    padding: 10px;
+    border-radius: 50%;
+    background-color: red;
+}
+.bookRefer .fa{
+    font-size: 25px;
+    color: white;
+}
+.yellow-star{
+    color: #f4c828;
+    
+}
+.gray-star{
+    color: #d3dce6;
+}
+.bookCateFooter{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+.bookCateFooter button{
+    width: 75.5%;
+    background-color: blue;
+    color:white;
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+   
+    font-family: 'Tajawal';
+}
+.bookCateFooter h4{
+     
+    width: 75%;
+    padding: 10px 0;
+    color: #285c15;
+}
+.bookCateFooter div{
+    background-color: #f1f1f1;
+    width: 77%;
+    height: 10px;
+    margin-top:  10px;
+}
