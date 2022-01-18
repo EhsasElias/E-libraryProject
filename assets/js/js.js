@@ -62,4 +62,16 @@ const countdown=()=>{
     }
     
     setInterval(countdown,100);
+
+
+    const imgs = document.getElementsByClassName('image');
+ const img_model = document.getElementById('imgmodel');
+
+for(let i=0;i<imgs.length ;i++){
+    
+    imgs[i].addEventListener('click' ,function(e){
+        e.target;
+        img_model.setAttribute('src',e.target.src);
+    });
+}
     
