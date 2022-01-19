@@ -529,10 +529,50 @@ padding: 10px;
     border: none;
     
 }
+.bookSliderContainer{
+    display: none;
+    overflow: hidden;
+    width: 500px;
+    align-items: center;
+    margin: auto;
+    font-size: 50px;
+    color: red;
+    position: relative;
+}
 .bookSlider{
+    transition: 0.8s;
     text-align: center;
+    
+    display: flex;
+    margin: auto;
 }
 #imgmodel{
    
     height: 500px;
+    width: 500px;
+}
+#imgmode2{
+    height: 500px;
+    width: 500px;
+}
+.image2{
+    display: none;
+}
+#left {
+    position: absolute;
+    left: 0;
+    z-index: 1;
+}
+#right{
+    position: absolute;
+    right: 0;
+    z-index: 1;
+}
+#closing{
+    
+    color: red;
+    top: 80%;
+   left: 40%;
+    font-size: 100px;
+    
 }

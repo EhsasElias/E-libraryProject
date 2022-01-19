@@ -65,13 +65,38 @@ const countdown=()=>{
 
 
     const imgs = document.getElementsByClassName('image');
+    const imgs2 = document.getElementsByClassName('image2');
  const img_model = document.getElementById('imgmodel');
+ const img_model2 = document.getElementById('imgmode2');
 
 for(let i=0;i<imgs.length ;i++){
     
     imgs[i].addEventListener('click' ,function(e){
         e.target;
+        _bookCon.style.display = "flex";
+        _innerCont.style.display = "none";
         img_model.setAttribute('src',e.target.src);
+        
+       img_model2.setAttribute('src',imgs2[i].src);
+       
+
     });
 }
+
+const _right = document.getElementById('right');
+const _left = document.getElementById('left');
+const _bookSlider = document.getElementById('bookSlider');
+const _bookCon = document.getElementById('bookSliderContainer');
+const _close = document.getElementById('closing');
+
+_right.addEventListener('click' , ()=>{
+    _bookSlider.style.transform="translateX(0px)";
+});
+_left.addEventListener('click' , ()=>{
+ _bookSlider.style.transform = "translateX(500px)";
+});
+_close.addEventListener('click' ,()=>{
+_bookCon.style.display = "none";
+_innerCont.style.display = "block";
+});
     
