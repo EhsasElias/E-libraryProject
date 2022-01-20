@@ -99,4 +99,14 @@ _close.addEventListener('click' ,()=>{
 _bookCon.style.display = "none";
 _innerCont.style.display = "block";
 });
+
+const _addToChart = document.getElementsByClassName('bookReferFont');
+
+for(let i=0;i<_addToChart.length ;i++){
     
+    _addToChart[i].addEventListener('click' ,function(e){
+        e.target;
+       
+
+    });
+}   

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>payment</title>
+    <link rel="stylesheet" href="../assets/css/payment.css">
+</head>
+<body>
+    <section>
+        <section id="paymentContainer">
+            <div class="paymentInfo" >
+                <form>
+                    <input type="username" placeholder="الاسم">
+                    <input type="email" placeholder="الأيميل">
+                    <button> التالي</button>
+                    <button>السابق</button>
+                </form>
+            </div>
+            <div class="paymentInfo">
+                <select name="categoriesSorting" id="_cate">
+                    <option value="*">الرجاء الإختيار</option>
+                    <option value="payment_method">paypal</option>
+                    <option value="payment_method">VISA card</option>
+                    
+                </select>
+                <p>* سعر الفاتورة</p>
+                <button>التالي</button>
+                <button>السابق</button>
+
+            </div>
+            <div class="paymentInfo">
+                <p>
+                    لقد قمت بتعبئة البيانات الشخصية و تفاصيل الدفع يرجى الضغط على موافق لإكمال شرائك
+                </p>
+                <button>موافق</button>
+                <button>السابق</button>
+
+            </div>
+            <div class="paymentInfo">
+                <p></p>
+                <p>لقد تم الشراء بنجاح</p>
+                <span></span>
+            </div>
+        </section>
+        
+        <div class="container-btn">
+            <button class="btn" id="butPrev">السابق</button>
+            <button class="btn" id="butNext">التالي</button>
+        </div>
+        <div class="container">
+
+            <div class="progress" id="progress"></div>
+            <div class="progress-active"></div>
+            <div class="circal active fa fa-check"></div>
+            <div class="circal fa fa-check"></div>
+            <div class="circal fa fa-check"></div>
+            <div class="circal fa fa-check"></div>
+    
+        </div>
+    
+       
+    </section>
+    <script src="../assets/js/payment.js"></script>
+</body>
+</html>

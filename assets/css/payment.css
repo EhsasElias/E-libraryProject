@@ -1,0 +1,130 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+section{
+    width: 100vw;
+    height: 100vh;
+    
+    
+}
+section section{
+    width: 400px !important;
+    margin: auto;
+    height: 80%;
+	white-space: nowrap;
+	font-size: 0;
+	transition: 0.8s;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    transition: 0.8s;
+    
+    /* overflow: hidden; */
+   
+}
+section .paymentInfo{
+    
+    border-radius: 5px;
+    border: 1px solid black;
+	height: 100%;
+	width: 400px;
+    display: inline-block;
+	white-space: normal;
+    height: 100%;
+	width: 100%;
+    
+    
+}
+
+
+
+/* stteper */
+:root{
+    --circal-defult:#ccc;
+    --circal-active:green;
+    --width-active:0;
+}
+.container {
+    display: flex;
+    width: 90%;
+    height: 30vh;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin: auto;
+}
+
+.progress{
+    
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    
+    align-items: center;
+    
+
+}
+
+.progress::before{
+    position: absolute;
+    content: '';
+    top: 50%;
+    width: 100%;
+    background-color: var(--circal-defult);
+    height: 2px;
+    align-items: center;
+    z-index: -2;
+}
+.progress-active{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+   
+    align-items: center;
+    
+    
+}
+.progress-active::before{
+    position: absolute;
+    content: '';
+    top: 50%;
+    width: var(--width-active);
+    height: 2px;
+    background-color: var(--circal-active);
+    z-index: -1;
+    align-items: center;
+}
+.circal{
+    background-color: var(--circal-defult);
+    height: 40px;
+    width: 40px;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-btn{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    align-items: center;
+    position: relative;
+}
+
+.btn{
+background-color: purple;
+color: white;
+border: none;
+padding: 20px;
+}
+.active{
+    background-color: var(--circal-active);
+    color: white;
+    border: 10px solid var(--circal-defult);
+}
