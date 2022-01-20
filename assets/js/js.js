@@ -135,3 +135,22 @@ for (let i = 0; i < _searchChecker.length; i++) {
 
     });
 }
+const nnn = document.getElementById('ehsas');
+
+window.localStorage.setItem('name', 'Ehsas');
+// window.localStorage.key(0);
+nnn.innerHTML= window.localStorage.getItem('name');
+// alert();
+
+const _headerCart = document.getElementById('headerChart');
+const _bookReferFont = document.getElementsByClassName('bookReferFont');
+var _clicks=0;
+for(let i=0 ; i<_bookReferFont.length ;i++){
+_bookReferFont[i].addEventListener('click' ,()=>{
+    _clicks = _clicks + 1;
+
+
+window.localStorage.setItem('numclick',_clicks);
+_headerCart.innerText = window.localStorage.getItem('numclick');
+});
+}
