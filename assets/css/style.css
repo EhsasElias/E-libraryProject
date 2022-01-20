@@ -576,3 +576,9 @@ padding: 10px;
     font-size: 100px;
     
 }
+.hidden{
+    display: none;
+}
+.visible{
+    display: block;
+}

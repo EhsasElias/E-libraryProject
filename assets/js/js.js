@@ -117,29 +117,29 @@ const _cards = document.getElementsByClassName('bookCard-v1');
 for (let i = 0; i < _searchChecker.length; i++) {
 
     _searchInput.addEventListener('input', function () {
-        _searchInput.value= _searchInput.value.trim().slice(0, 3);
-        var check = _searchChecker[i].innerHTML.trim().slice(0,3);
+        _searchInput.value= _searchInput.value;
+        var check = _searchChecker[i].innerHTML.trim();
 
-        if (_searchInput.value != check) {
+        if (check.includes(_searchInput.value)) {
 
-        _cards[i].style.display = "none";
-               
-
+        _cards[i].classList.add('visible');
+        _cards[i].classList.remove('hidden');
+        
 
         }
         else {
-            _cards[i].style.display = "block";
+            _cards[i].classList.add('hidden');
+            _cards[i].classList.remove('visible');
+    
 
         }
-        
-
     });
 }
-const nnn = document.getElementById('ehsas');
+// const nnn = document.getElementById('ehsas');
 
-window.localStorage.setItem('name', 'Ehsas');
+// window.localStorage.setItem('name', 'Ehsas');
 // window.localStorage.key(0);
-nnn.innerHTML= window.localStorage.getItem('name');
+// nnn.innerHTML= window.localStorage.getItem('name');
 // alert();
 
 const _headerCart = document.getElementById('headerChart');
