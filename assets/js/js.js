@@ -142,15 +142,16 @@ for (let i = 0; i < _searchChecker.length; i++) {
 // nnn.innerHTML= window.localStorage.getItem('name');
 // alert();
 
-const _headerCart = document.getElementById('headerChart');
+const _headerCart = document.getElementById('headerChart') ;
+_headerCart.innerText = window.localStorage.getItem('numclick');
 const _bookReferFont = document.getElementsByClassName('bookReferFont');
 var _clicks=0;
 for(let i=0 ; i<_bookReferFont.length ;i++){
 _bookReferFont[i].addEventListener('click' ,()=>{
     _clicks = _clicks + 1;
 
-
-window.localStorage.setItem('numclick',_clicks);
+    window.localStorage.setItem('numclick',_clicks);
 _headerCart.innerText = window.localStorage.getItem('numclick');
 });
+// _headerCart.innerText = window.localStorage.getItem('numclick');
 }
