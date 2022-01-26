@@ -203,23 +203,41 @@ font-family: 'Tajawal';
     color: var(--circal-active);
     border: 2px solid var(--circal-active);
 }
+.close{
+    height: 35px;
+    width: 35px;
+   
+    position: absolute;
+    top:25px;
+    right:30px;
+  border: 1px solid #f26b55ff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  
+}
+.close a{
+    color: #f26b55ff;
+    text-decoration: none;
+}
 @media only screen and (max-width: 600px){
   body{
  overflow-x: hidden;
     margin: auto;
   }
    .slidercontainer{
-     
        margin: auto;
        display: block;
- 
-
-   }
+ }
     .container{
         width: 95% !important;
         margin: auto;
-
-
-    }
+ }
+ .close{
+     top: 15px;
+     right: 45%;
+ }
    
 }
