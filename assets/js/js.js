@@ -9,7 +9,7 @@ const _closeSignin = document.getElementById('closesignin');
 
 
 _login.addEventListener('click', () => {
-    _innerCont.style.display = "none";
+   
     _loginModel.style.display = "flex";
 
 });
@@ -25,7 +25,7 @@ _loginBack.addEventListener('click', () => {
 
 _closeSignup.addEventListener('click', () => {
     _signup.style.display = "none";
-    _innerCont.style.display = "block";
+
 });
 
 _closeSignin.addEventListener('click', () => {
@@ -194,7 +194,14 @@ function showSlides(n) {
   }
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
+ 
+  
+ 
+  
 }
+var autoplayInterval = setInterval(function () {
+    nArrow.click();
+}, 2000);
 
 var _style = document.getElementsByTagName('link')[0];
 var _lan = document.getElementById('language');

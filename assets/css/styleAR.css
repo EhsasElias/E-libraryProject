@@ -16,9 +16,13 @@ body{
     font-family: 'Tajawal';
     src: url("../fonts/Tajawal-Regular.ttf");
 }
-
+#menu{
+    display: none;
+    
+}
 nav{
     background-color: #f9fafc;
+    color: #455570;
 }
 nav div{
     display: flex;
@@ -40,21 +44,36 @@ nav div a:first-child{
 nav div a:last-child{
     font-weight: 600;
 }
+.svgs a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.svg{
+    margin: 0 7px;
+}
 .language{
    display: flex; 
    align-items: center;
    
+   
 }
-#language{cursor: pointer;}
 .language p{
     padding: 0 8px;
 }
 nav div a span{
     padding: 10px;
 }
+.logo{
+    
+    display: flex;
+    align-items: center;
+}
 .header-bottom{
     display: flex;
     justify-content: center;
+   
     padding: 10px 90px;
     
 }
@@ -78,7 +97,7 @@ width: 100%;
     font-size: 25px;
 }
 .search-div input{
-    width: 57vw;
+    width: 57em;
     border: none;
     background-color: #eff2f7;
     padding: 10px;
@@ -101,7 +120,9 @@ width: 100%;
   color: inherit;
     
 }
-
+.logoResponsive{
+    display: none;
+}
 .uperfoter{
     padding: 8px;
     display: flex;
@@ -406,7 +427,9 @@ padding: 10px;
     font-size: 100px;
     color: white;
 }
-
+.fa-close:hover{
+    color: gray;
+}
 .counterChild{
     width: 40%;
     display: flex;
@@ -428,6 +451,7 @@ padding: 10px;
     border: none;
     
 }
+
 .bookSliderContainer{
     display: none;
     overflow: hidden;
@@ -481,8 +505,46 @@ padding: 10px;
 .visible{
     display: block;
 }
-@media only screen and (max-width: 800px){
-.categoriesSec{
+#login{
+    cursor: pointer;
+}
+.CSSgal{
     display: none;
+}
+
+@media only screen and (max-width: 800px){
+
+    #inneContent{
+        width: 100vw;
+    }
+.categoriesSec aside{
+    display: none;
+}
+#menu{display: inline;
+position: absolute;
+right: 50px;
+top: 30px;}
+nav{
+    display: none;
+}
+
+.search-div{
+    margin-right: 60%;
+
+}
+.search-div input{
+    width: 10em;
+}
+.logo{
+    display: none !important;
+}
+.logoResponsive{
+    display: flex;
+    justify-content: center;
+}
+
+.bookCard-v1{
+    width: 90% !important;
+    
 }
 }

@@ -21,17 +21,18 @@
 
         <header>
             <nav>
-                <div>
+                <div class="svgs">
+                    
                     <a id="login">
-                        <span class="fa fa-user"></span>
+                        <img src="./assets/images/svg/user.svg" width="20" alt="" class="svg">
                         ادخل لحسابك او سجل الان
                     </a>
                     <a href="">
-                        <span class="fa fa-star"></span>
+                        <img src="./assets/images/svg/start.svg" width="20" alt="" class="svg">
                         الرئيسية
                     </a>
                     <a href="">
-                        <span class="fa fa-truck"></span>
+                        <img src="./assets/images/svg/car.svg" width="20" alt="" class="svg">
                         من نحن
                     </a>
                     <a href="">
@@ -39,21 +40,21 @@
                         اتصل بنا
                     </a>
                     <a href="">
-                        <span class="fa fa-exclamation-circle"></span>
+                       <img src="./assets/images/svg/help.svg" width="20" alt="" class="svg">
                         المساعدة
                     </a>
                     <a href="">
-                        <span class="fa fa-map-marker"></span>
+                        <img src="./assets/images/svg/location.svg" alt="">
                         سياسة الخصوصية
                     </a>
                     <a class="language">
-                        <span></span>
+                        <img src="./assets/images/svg/flag.svg" width="20" alt="" class="svg">
                         <p>اليمن</p>
                         <p>YER</p>
                     </a>
                     <a  id="language">
                         English
-                        <span class="fa fa-language"></span>
+                        <img src="./assets/images/svg/lan.svg" width="20" alt="" class="svg">
                     </a>
                 </div>
             </nav>
@@ -62,11 +63,14 @@
 
 
             <div class="header-bottom">
-                <div>
-                    <img src="assets/images/logos/logo.png" alt="">
+
+                <div class="logo">
+
+                   <a href="index.html"><img src="assets/images/svg/logo.svg" width="180px" alt=""></a> 
                 </div>
                 <div class="search-div">
 
+                    <a id="menu"><img src="./assets/images/svg/menu.svg" alt=""></a>
 
                     <input type="search" value="" placeholder="البحث" id="search">
                     <button class="fa fa-search"></button>
@@ -74,7 +78,10 @@
                     <a class="fa fa-shopping-cart" id="headerChart" href="./templates/payment_page.html">0</a>
                 </div>
             </div>
+            <div class="logoResponsive">
 
+                <a href="index.html"><img src="assets/images/svg/logo.svg" width="180px" alt=""></a> 
+             </div>
         </header>
 
 
@@ -147,7 +154,7 @@
                 <p class="fa fa-angle-left sliderArrow" id="_n"></p>
             </div>
             <div style="text-align:center">
-                <span class="dot active"></span>
+                <span class="dot active" onclick="currentSlide(1)"></span>
                 <span class="dot" onclick="currentSlide(2)"></span>
                 <span class="dot" onclick="currentSlide(3)"></span>
                 <span class="dot" onclick="currentSlide(4)"></span>
@@ -1299,7 +1306,7 @@
     </div>
 
 
-    <section id="login-model">
+    <section id="login-model" class="overlay">
         <div>
             <h3>تسجيل الدخول</h3>
             <form class="loginForm" action="">
@@ -1379,7 +1386,7 @@
         <span class="fa fa-angle-left" id="left"></span>
         <span class="fa fa-close" id="closing"></span>
     </section>
-    <p id="ehsas">sooo</p>
+ 
     <script src="assets/js/js.js"></script>
 </body>
 
