@@ -195,3 +195,18 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
 }
+
+var _style = document.getElementsByTagName('link')[0];
+var _lan = document.getElementById('language');
+_lan.addEventListener('click' ,()=> {
+styleToggle();
+});
+function styleToggle(){
+    if(_style.getAttribute('href') == "assets/css/styleAR.css"){
+        _style.setAttribute('href' , 'assets/css/styleEN.css');
+    }
+    else{
+        _style.setAttribute('href' , 'assets/css/styleAR.css');
+
+    }
+}

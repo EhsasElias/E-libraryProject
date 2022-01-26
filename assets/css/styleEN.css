@@ -5,7 +5,7 @@
 }
 
 html{
-    direction: rtl;
+    direction: ltr;
 }
 body{
     font-family: 'Tajawal';
@@ -43,7 +43,9 @@ nav div a:last-child{
 .language{
    display: flex; 
    align-items: center;
+
 }
+#language{cursor: pointer;}
 .language p{
     padding: 0 8px;
 }
@@ -80,15 +82,15 @@ width: 100%;
     border: none;
     background-color: #eff2f7;
     padding: 10px;
-    border-bottom-right-radius: 50px;
-    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 50px;
 }
 .search-div button{
     border: none;
     background-color: #eff2f7;
     padding: 10px;
-    border-bottom-left-radius: 50px;
-    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 50px;
 }
 .fa-shopping-cart{
     border-radius: 50px;
@@ -208,6 +210,7 @@ form .fa-lock{
 
 .sliderArrow {
     font-size: 60px !important;
+    transform: rotate(535deg);
 }
 
 .active {
