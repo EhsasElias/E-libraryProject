@@ -1,67 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>payment</title>
     <link rel="stylesheet" href="../assets/css/payment.css">
+    <link rel="stylesheet" href="../assets/css/font-awesome.css">
 </head>
+
 <body>
-    <section class="parentCotainer">
-        <section id="paymentContainer">
-            <div class="paymentInfo" >
+
+    <div class="container">
+
+        <div class="progress" id="progress"></div>
+        <div class="progress-active"></div>
+        <div class="circal active">1 </div>
+        <div class="circal">2</div>
+        <div class="circal">3</div>
+        <div class="circal">4</div>
+
+
+    </div>
+    <div class="slidercontainer">
+        <div class="showSlide show">
+
+            <div class="content">
                 <form>
+                    <h4>البيانات الشخصية</h4>
                     <input type="username" placeholder="الاسم">
-                    <input type="email" placeholder="الأيميل">
-                    <button> التالي</button>
-                    <button>السابق</button>
+                    <input type="email" placeholder="الإيميل">
+                    <input type="text" placeholder="العنوان">
+                    <input type="text" placeholder="المدينة">
+                    <input type="text" placeholder="zip">
+
+
+
                 </form>
             </div>
-            <div class="paymentInfo">
-                <select name="categoriesSorting" id="_cate">
-                    <option value="*">الرجاء الإختيار</option>
-                    <option value="payment_method">paypal</option>
-                    <option value="payment_method">VISA card</option>
-                    
-                </select>
-                <p>* سعر الفاتورة</p>
-                <button>التالي</button>
-                <button>السابق</button>
+        </div>
 
-            </div>
-            <div class="paymentInfo">
-                <p>
-                    لقد قمت بتعبئة البيانات الشخصية و تفاصيل الدفع يرجى الضغط على موافق لإكمال شرائك
-                </p>
-                <button>موافق</button>
-                <button>السابق</button>
+        <div class="showSlide">
 
+            <div class="content">
+                <form>
+                    <h4>فاتورة الشراء</h4>
+                    <div id="CArt">
+                        <div class="productDesign">
+                            <h3 class="fa fa-shopping-cart">
+                                3
+                            </h3>
+                            <h3>
+                                السلة
+                            </h3>
+                            
+                        </div>
+                        <div class="productDesign">
+                           
+                            <p>
+                             $ 50  
+                              
+                           </p>
+                           <p>
+                            منتج 1
+                        </p>
+                        </div>
+                        <div class="productDesign">
+                            
+                            <p>
+                              $ 15 
+                            </p>
+                            <p>
+                                منتج 2
+                            </p>
+                        </div>
+                        <div class="productDesign">
+                           
+                            <p>
+                                $ 20
+                            </p>
+                            <p>
+                                منتج 3
+                            </p>
+                        </div>
+                        <div class="productDesign total">
+                            <h3>
+                                $ 85
+                            </h3>
+                            <p>
+                                المجموع
+                            </p>
+                            
+                        </div>
+                    </div>
+                </form>
             </div>
-            <div class="paymentInfo">
-                <p></p>
-                <p>لقد تم الشراء بنجاح</p>
-                <span></span>
+        </div>
+
+        <div class="showSlide">
+
+            <div class="content">
+                <form>
+                    <h4>الدفع</h4>
+                    <label for="Ptype">
+                        أليات الدفع المتاحة
+
+                    </label>
+                    <div id="Ptype">
+                        <i class="fa fa-cc-visa"></i>
+                        <i class="fa fa-cc-amex"></i>
+                        <i class="fa fa-cc-mastercard"></i>
+                    </div>
+                    <label for="uname">
+                        اسم المشتري (الإسم على بطاقة الدفع)
+                    </label>
+                    <input type="text" placeholder="احساس الياس العزعزي" id="uname">
+                    <label for="CardNum">
+                        رقم بطاقة الدفع
+                    </label>
+                    <input type="text" placeholder="1111-2222-3333-4444">
+                    <label for="Emonth">
+                        (Exp month)شهر الإنتهاء
+                    </label>
+                    <input type="text" id="Emonth" placeholder="يناير">
+                    <label for="ccv">
+                        CCV
+                    </label>
+                    <input type="text" placeholder="352" id="ccv">
+                    <label for="Eyear">
+                        سنة الإنهاء
+                    </label>
+                    <input type="text" id="Eyear" placeholder="2025">
+                </form>
             </div>
-        </section>
-        
+        </div>
+
+
+
+        <div class="showSlide">
+
+            <div class="content">
+                <div class="submit">
+                    <p class="fa fa-check-circle-o"></p>
+                    <h5>لقد قمت بعملية الشراء بنجاح</h5>
+                </div>
+            </div>
+        </div>
         <div class="container-btn">
             <button class="btn" id="butPrev">السابق</button>
             <button class="btn" id="butNext">التالي</button>
         </div>
-        <div class="container">
 
-            <div class="progress" id="progress"></div>
-            <div class="progress-active"></div>
-            <div class="circal active fa fa-check"></div>
-            <div class="circal fa fa-check"></div>
-            <div class="circal fa fa-check"></div>
-            <div class="circal fa fa-check"></div>
-    
-        </div>
-    
-       
-    </section>
+    </div>
+
+
+
+
     <script src="../assets/js/payment.js"></script>
 </body>
+
 </html>

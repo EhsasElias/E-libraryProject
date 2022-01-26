@@ -412,7 +412,7 @@ aside .priceDetaile{
     flex-wrap: wrap;
 }
 .bookRow1{
-    width: 98%;
+  
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -423,13 +423,17 @@ aside .priceDetaile{
     border-radius: 5px;
     border: 1px solid #ccc;
     text-align: center;
-    width: 24%;
-    margin: 5px 0;
+    width: 220px;
+    margin: 5px;
+    
     
 }
 .bookCard-v1 h3{
     display: flex;
     justify-content: center;
+}
+.bookCard-v1 .searchCheck{
+ width: 100%;   
 }
 .bookCard-v1 .cost{
     color: red;
@@ -505,9 +509,7 @@ padding: 10px;
     font-size: 100px;
     color: white;
 }
-.counter{
-    
-}
+
 .counterChild{
     width: 40%;
     display: flex;

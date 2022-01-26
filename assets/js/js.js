@@ -36,7 +36,7 @@ _closeSignin.addEventListener('click', () => {
 
 // Counter
 const countdown = () => {
-    const upperdate = new Date('Jan 23, 2022 00:00:00').getTime();
+    const upperdate = new Date('Jan 28, 2022 00:00:00').getTime();
     const currentDate = new Date().getTime();
     const diffDate = upperdate - currentDate;
     const secound = 1000;
@@ -142,16 +142,17 @@ for (let i = 0; i < _searchChecker.length; i++) {
 // nnn.innerHTML= window.localStorage.getItem('name');
 // alert();
 
-const _headerCart = document.getElementById('headerChart') ;
-_headerCart.innerText = window.localStorage.getItem('numclick');
-const _bookReferFont = document.getElementsByClassName('bookReferFont');
+var _headerCart = document.getElementById('headerChart') ;
+var _bookReferFont = document.getElementsByClassName('bookReferFont');
 var _clicks=0;
+_headerCart.innerText = window.localStorage.getItem('numclick');
+
 for(let i=0 ; i<_bookReferFont.length ;i++){
+
 _bookReferFont[i].addEventListener('click' ,()=>{
     _clicks = _clicks + 1;
 
     window.localStorage.setItem('numclick',_clicks);
 _headerCart.innerText = window.localStorage.getItem('numclick');
 });
-// _headerCart.innerText = window.localStorage.getItem('numclick');
 }
