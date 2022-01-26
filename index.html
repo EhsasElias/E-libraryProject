@@ -114,58 +114,46 @@
         <!-- slider by html css pure -->
         <section class="CSSgal">
 
-            <!-- Don't wrap targets in parent -->
-            <s id="s1"></s>
-            <s id="s2"></s>
-            <s id="s3"></s>
-            <s id="s4"></s>
-            <s id="s5"></s>
-            <s id="s6"></s>
-            <s id="s7"></s>
-
-            <div class="slider">
-                <div>
-                    <img src="assets/images/sliderImages/1.jpg" alt="">
+            <div class="container">
+                <p class="fa fa-angle-right sliderArrow" id="_p"></p>
+                <div class="slider" style="display: block;">
+        
+                    <img src="./assets/images/sliderImages/1.jpg" alt="">
+        
                 </div>
-                <div>
-                    <img src="assets/images/sliderImages/2.jpg" alt="">
+                <div class="slider">
+                    <img src="./assets/images/sliderImages/2.jpg" alt="">
+        
                 </div>
-                <div>
-                    <img src="assets/images/sliderImages/3.jpg" alt="">
+                <div class="slider">
+                    <img src="./assets/images/sliderImages/3.jpg" alt="">
+        
                 </div>
-                <div>
-                    <img src="assets/images/sliderImages/4.jpg" alt="">
+                <div class="slider">
+                    <img src="./assets/images/sliderImages/4.jpg" alt="">
+        
                 </div>
-                <div>
-                    <img src="assets/images/sliderImages/5.jpg" alt="">
+                <div class="slider">
+                    <img src="./assets/images/sliderImages/5.jpg" alt="">
+        
                 </div>
-                <div>
-                    <img src="assets/images/sliderImages/6.jpg" alt="">
+                <div class="slider">
+                    <img src="./assets/images/sliderImages/6.jpg" alt="">
+        
                 </div>
-                <div>
-                    <img src="assets/images/sliderImages/7.jpeg" alt="">
+                <div class="slider">
+                    <img src="./assets/images/sliderImages/7.jpeg" alt="">
                 </div>
+                <p class="fa fa-angle-left sliderArrow" id="_n"></p>
             </div>
-
-
-            <div class="prevNext">
-                <div><a href="#s7" class="fa fa-angle-left"></a><a href="#s2" class="fa fa-angle-right"></a></div>
-                <div><a href="#s1" class="fa fa-angle-left"></a><a href="#s3" class="fa fa-angle-right"></a></div>
-                <div><a href="#s2" class="fa fa-angle-left"></a><a href="#s4" class="fa fa-angle-right"></a></div>
-                <div><a href="#s3" class="fa fa-angle-left"></a><a href="#s5" class="fa fa-angle-right"></a></div>
-                <div><a href="#s4" class="fa fa-angle-left"></a><a href="#s6" class="fa fa-angle-right"></a></div>
-                <div><a href="#s5" class="fa fa-angle-left"></a><a href="#s7" class="fa fa-angle-right"></a></div>
-                <div><a href="#s6" class="fa fa-angle-left"></a><a href="#s1" class="fa fa-angle-right"></a></div>
-            </div>
-
-            <div class="bullets">
-                <a href="#s1"></a>
-                <a href="#s2"></a>
-                <a href="#s3"></a>
-                <a href="#s4"></a>
-                <a href="#s5"></a>
-                <a href="#s6"></a>
-                <a href="#s7"></a>
+            <div style="text-align:center">
+                <span class="dot active"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span>
+                <span class="dot" onclick="currentSlide(7)"></span>
             </div>
 
         </section>
