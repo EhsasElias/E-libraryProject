@@ -238,7 +238,21 @@ footer form{
 .active {
     background-color: #717171;
 }
-
+.cateDiv{
+    width: 85%;
+    overflow-x: scroll;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+.cateDiv a{
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    padding: 25px 45px;
+    text-align: center;
+}
 
 /* End Slider */
 .categoriesSec{
@@ -318,8 +332,11 @@ aside .priceDetaile{
     justify-content: center;
    display: flex;
    flex-wrap: wrap;
-   width: 77%;
+   width: 100%;
  
+}
+.productImgscate{
+    width: 77%;
 }
 .productImgs .storBy{
    margin-right: auto;
@@ -337,17 +354,20 @@ aside .priceDetaile{
     display: flex;
     flex-wrap: wrap;
     
+    
+    
 }
 .bookRow1{
-  
+    
     display: flex;
-   width: 100%;
+   width: 90vw;
     justify-content: space-between;
     margin: auto;
-    
+    overflow-x: scroll;
     
 }
 .bookRow1 .bookCard-v1{
+    
     border-radius: 5px;
     border: 1px solid #ccc;
     text-align: center;
@@ -421,6 +441,14 @@ padding: 10px;
     padding: 5px;
     font-family: 'Tajawal';
 }
+.bookCateFooterIndex button{
+    width: 100%;
+}
+.bookCateFooterIndex h4{
+    width: 100% !important;
+}
+.bookCateFooterIndex div
+{width: 100% !important;}
 .bookCateFooter h4{
      
     width: 75%;
@@ -537,11 +565,9 @@ padding: 10px;
 
 @media only screen and (max-width: 800px){
 
-    #inneContent{
-        width: 100vw;
-    }
+   
 .categoriesSec aside{
-    display: none;
+    display: none !important;
 }
 #menu{display: inline;
 position: absolute;
@@ -569,5 +595,12 @@ nav{
 .bookCard-v1{
     width: 90% !important;
     
+    
+}
+.categoriesSec{
+    width: 100%;
+}
+footer{
+    width: 100%;
 }
 }
