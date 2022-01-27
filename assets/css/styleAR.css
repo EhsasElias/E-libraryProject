@@ -240,7 +240,7 @@ footer form{
 }
 .cateDiv{
     width: 85%;
-    overflow-x: scroll;
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -363,7 +363,7 @@ aside .priceDetaile{
    width: 90vw;
     justify-content: space-between;
     margin: auto;
-    overflow-x: scroll;
+    
     
 }
 .bookRow1 .bookCard-v1{
@@ -576,7 +576,10 @@ top: 30px;}
 nav{
     display: none;
 }
-
+.container{
+    width: 115vw;
+  
+}
 .search-div{
     margin-right: 60%;
 
@@ -593,14 +596,22 @@ nav{
 }
 
 .bookCard-v1{
-    width: 90% !important;
+    width: 100% !important;
     
     
+}
+.bookRow1{
+    overflow-x: scroll;
+    width: 100vw;
+}
+.cateDiv{
+    overflow-x: scroll;
+    width: 115vw;
 }
 .categoriesSec{
     width: 100%;
 }
 footer{
-    width: 100%;
+    width: 115vw !important;
 }
 }
