@@ -118,6 +118,7 @@ width: 100%;
     background-color: #eff2f7;
   text-decoration: none;
   color: inherit;
+  cursor: pointer;
     
 }
 .logoResponsive{
@@ -141,31 +142,7 @@ width: 100%;
     text-decoration: none;
 
 }
-form{
-    display: flex;
-    flex-wrap: wrap;
-    padding: 10px;
-    margin: 5px;
-    background-color: #484848;
-    border-radius: 5px;
-    
-}
-form input{
-width: 100%;
-padding: 10px;
-border-radius: 5px;
-border:none;
-font-family: 'Tajawal';
-}
-form button{
-    font-family: 'Tajawal';
-    margin: 5px 0;
-    margin-right: auto;
-    padding: 10px;
-    font-size: 18px;
-    border:none;
-    border-radius: 5px;
-}
+
 .fonts{
     width: 100%;
 }
@@ -184,10 +161,35 @@ form button{
     width: 90%;
     margin-right: auto;
 }
-form{
+footer form{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    margin: 5px;
+    background-color: #484848;
+    border-radius: 5px;
+    
+}
+footer form input{
+width: 100%;
+padding: 10px;
+border-radius: 5px;
+border:none;
+font-family: 'Tajawal';
+}
+footer form button{
+    font-family: 'Tajawal';
+    margin: 5px 0;
+    margin-right: auto;
+    padding: 10px;
+    font-size: 18px;
+    border:none;
+    border-radius: 5px;
+}
+footer form{
     position: relative;
 }
-form .fa-lock{
+ footer form .fa-lock{
     color: #484848;
     opacity: 0.5;
     position: absolute;
@@ -248,7 +250,13 @@ form .fa-lock{
 .categoriesSec aside{
     width: 23%;
 }
-
+.categoriesSecIndex{
+    margin: 50px;
+}
+.categoriesSecIndex .bookCard-v1{
+    width: 95%;
+    margin: auto;
+}
 aside .bookLinks a{
     text-decoration: none;
     color: blue;
@@ -328,13 +336,15 @@ aside .priceDetaile{
 .booksimgs{
     display: flex;
     flex-wrap: wrap;
+    
 }
 .bookRow1{
   
     display: flex;
-    flex-wrap: wrap;
+   width: 100%;
     justify-content: space-between;
-    margin-right: auto;
+    margin: auto;
+    
     
 }
 .bookRow1 .bookCard-v1{
@@ -349,6 +359,9 @@ aside .priceDetaile{
 .bookCard-v1 h3{
     display: flex;
     justify-content: center;
+}
+.offer{
+    color: red;
 }
 .bookCard-v1 .searchCheck{
  width: 100%;   
@@ -442,6 +455,16 @@ padding: 10px;
     justify-content: space-around;
     margin: auto;
 }
+#counter{
+    position: absolute;
+    top: 20px;
+   right: 0;
+    z-index: 5;
+    color: black;
+    font-size: 15px;
+    width: 100%;
+    
+}
 .counterChild button{
     border-radius: 5px;
     background-color: black;
@@ -509,7 +532,7 @@ padding: 10px;
     cursor: pointer;
 }
 .CSSgal{
-    display: none;
+   margin: 5% auto;
 }
 
 @media only screen and (max-width: 800px){

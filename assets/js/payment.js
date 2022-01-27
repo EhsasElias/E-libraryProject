@@ -116,6 +116,22 @@ _prev.addEventListener('click', () => {
     }
    
 });
+var _headerCart = document.getElementById('headerChart') ;
+_headerCart.innerText = window.localStorage.getItem('numclick');
+// var _style = document.getElementsByTagName('link')[0];
+// var _lan = document.getElementById('language');
+// _lan.addEventListener('click' ,()=> {
+// styleToggle();
+// });
+// function styleToggle(){
+//     if(_style.getAttribute('href') == "../assets/css/styleAR.css"){
+//         _style.setAttribute('href' , '../assets/css/styleEN.css');
+//     }
+//     else{
+//         _style.setAttribute('href' , '../assets/css/styleAR.css');
+
+//     }
+// }
 
 // var slide_index = 1;  
 // displaySlides(slide_index);  

@@ -54,14 +54,20 @@ const countdown = () => {
     var m = document.getElementById('counterChild2But1');
     var s = document.getElementById('counterChild1But1');
 
-    d.innerHTML = remain_days;
-    h.innerHTML = remain_hours;
-    m.innerHTML = remain_minutes;
-    s.innerHTML = remain_secoounds;
+    if(remain_secoounds > 0){
+        d.innerHTML = remain_days;
+        h.innerHTML = remain_hours;
+        m.innerHTML = remain_minutes;
+        s.innerHTML = remain_secoounds;
+       
+    }
+   
 
 }
 
 setInterval(countdown, 100);
+
+
 
 
 const imgs = document.getElementsByClassName('image');
