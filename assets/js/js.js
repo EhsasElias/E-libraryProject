@@ -65,7 +65,7 @@ const countdown = () => {
 
 }
 
-setInterval(countdown, 100);
+
 
 
 
@@ -84,7 +84,14 @@ for (let i = 0; i < imgs.length; i++) {
         img_model.setAttribute('src', e.target.src);
 
         img_model2.setAttribute('src', imgs2[i].src);
-
+        
+        if(imgs[i].className == 'image offer'){
+            setInterval(countdown, 100);
+            
+        }
+        else{
+            document.getElementById('counter').display = "none";
+        }
 
     });
 }
