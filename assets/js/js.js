@@ -86,6 +86,8 @@ for (let i = 0; i < imgs.length; i++) {
         img_model2.setAttribute('src', imgs2[i].src);
         
         if(imgs[i].className == 'image offer'){
+            document.getElementById('counter').display = "block";
+
             setInterval(countdown, 100);
             
         }

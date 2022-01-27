@@ -16,9 +16,13 @@ body{
     font-family: 'Tajawal';
     src: url("../fonts/Tajawal-Regular.ttf");
 }
-
+#menu{
+    display: none;
+    
+}
 nav{
     background-color: #f9fafc;
+    color: #455570;
 }
 nav div{
     display: flex;
@@ -40,21 +44,36 @@ nav div a:first-child{
 nav div a:last-child{
     font-weight: 600;
 }
+.svgs a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.svg{
+    margin: 0 7px;
+}
 .language{
    display: flex; 
    align-items: center;
-
+   
+   
 }
-#language{cursor: pointer;}
 .language p{
     padding: 0 8px;
 }
 nav div a span{
     padding: 10px;
 }
+.logo{
+    
+    display: flex;
+    align-items: center;
+}
 .header-bottom{
     display: flex;
     justify-content: center;
+   
     padding: 10px 90px;
     
 }
@@ -78,7 +97,7 @@ width: 100%;
     font-size: 25px;
 }
 .search-div input{
-    width: 57vw;
+    width: 57em;
     border: none;
     background-color: #eff2f7;
     padding: 10px;
@@ -99,9 +118,12 @@ width: 100%;
     background-color: #eff2f7;
   text-decoration: none;
   color: inherit;
+  cursor: pointer;
     
 }
-
+.logoResponsive{
+    display: none;
+}
 .uperfoter{
     padding: 8px;
     display: flex;
@@ -120,31 +142,7 @@ width: 100%;
     text-decoration: none;
 
 }
-form{
-    display: flex;
-    flex-wrap: wrap;
-    padding: 10px;
-    margin: 5px;
-    background-color: #484848;
-    border-radius: 5px;
-    
-}
-form input{
-width: 100%;
-padding: 10px;
-border-radius: 5px;
-border:none;
-font-family: 'Tajawal';
-}
-form button{
-    font-family: 'Tajawal';
-    margin: 5px 0;
-    margin-right: auto;
-    padding: 10px;
-    font-size: 18px;
-    border:none;
-    border-radius: 5px;
-}
+
 .fonts{
     width: 100%;
 }
@@ -163,10 +161,35 @@ form button{
     width: 90%;
     margin-right: auto;
 }
-form{
+footer form{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    margin: 5px;
+    background-color: #484848;
+    border-radius: 5px;
+    
+}
+footer form input{
+width: 100%;
+padding: 10px;
+border-radius: 5px;
+border:none;
+font-family: 'Tajawal';
+}
+footer form button{
+    font-family: 'Tajawal';
+    margin: 5px 0;
+    margin-right: auto;
+    padding: 10px;
+    font-size: 18px;
+    border:none;
+    border-radius: 5px;
+}
+footer form{
     position: relative;
 }
-form .fa-lock{
+ footer form .fa-lock{
     color: #484848;
     opacity: 0.5;
     position: absolute;
@@ -210,13 +233,27 @@ form .fa-lock{
 
 .sliderArrow {
     font-size: 60px !important;
-    transform: rotate(535deg);
+    display: none !important;
 }
 
 .active {
     background-color: #717171;
 }
-
+.cateDiv{
+    width: 85%;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+.cateDiv a{
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    padding: 25px 45px;
+    text-align: center;
+}
 
 /* End Slider */
 .categoriesSec{
@@ -228,7 +265,13 @@ form .fa-lock{
 .categoriesSec aside{
     width: 23%;
 }
-
+.categoriesSecIndex{
+    margin: 50px;
+}
+.categoriesSecIndex .bookCard-v1{
+    width: 95%;
+    margin: auto;
+}
 aside .bookLinks a{
     text-decoration: none;
     color: blue;
@@ -290,8 +333,11 @@ aside .priceDetaile{
     justify-content: center;
    display: flex;
    flex-wrap: wrap;
-   width: 77%;
+   width: 100%;
  
+}
+.productImgscate{
+    width: 77%;
 }
 .productImgs .storBy{
    margin-right: auto;
@@ -308,16 +354,21 @@ aside .priceDetaile{
 .booksimgs{
     display: flex;
     flex-wrap: wrap;
+    
+    
+    
 }
 .bookRow1{
-  
+    
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-right: auto;
+   width: 90%;
+    
+    margin: auto;
+    
     
 }
 .bookRow1 .bookCard-v1{
+    
     border-radius: 5px;
     border: 1px solid #ccc;
     text-align: center;
@@ -329,6 +380,9 @@ aside .priceDetaile{
 .bookCard-v1 h3{
     display: flex;
     justify-content: center;
+}
+.offer{
+    color: red;
 }
 .bookCard-v1 .searchCheck{
  width: 100%;   
@@ -388,6 +442,14 @@ padding: 10px;
     padding: 5px;
     font-family: 'Tajawal';
 }
+.bookCateFooterIndex button{
+    width: 100%;
+}
+.bookCateFooterIndex h4{
+    width: 100% !important;
+}
+.bookCateFooterIndex div
+{width: 100% !important;}
 .bookCateFooter h4{
      
     width: 75%;
@@ -407,7 +469,9 @@ padding: 10px;
     font-size: 100px;
     color: white;
 }
-
+.fa-close:hover{
+    color: gray;
+}
 .counterChild{
     width: 40%;
     display: flex;
@@ -420,6 +484,16 @@ padding: 10px;
     justify-content: space-around;
     margin: auto;
 }
+#counter{
+    position: absolute;
+    top: 20px;
+   right: 0;
+    z-index: 5;
+    color: black;
+    font-size: 15px;
+    width: 100%;
+    
+}
 .counterChild button{
     border-radius: 5px;
     background-color: black;
@@ -429,6 +503,7 @@ padding: 10px;
     border: none;
     
 }
+
 .bookSliderContainer{
     display: none;
     overflow: hidden;
@@ -482,8 +557,61 @@ padding: 10px;
 .visible{
     display: block;
 }
+#login{
+    cursor: pointer;
+}
+.CSSgal{
+   margin: 5% auto;
+}
+
 @media only screen and (max-width: 800px){
-.categoriesSec{
+
+   
+.categoriesSec aside{
+    display: none !important;
+}
+#menu{display: inline;
+position: absolute;
+right: 50px;
+top: 30px;}
+nav{
     display: none;
+}
+.container{
+    width: 100vw;
+}
+.search-div{
+    margin-right: 60%;
+
+}
+.search-div input{
+    width: 10em;
+}
+.logo{
+    display: none !important;
+}
+.logoResponsive{
+    display: flex;
+    justify-content: center;
+}
+
+.bookCard-v1{
+    width: 100% !important;
+    
+    
+}
+.bookRow1{
+    overflow-x: scroll;
+    width: 100vw;
+}
+.cateDiv{
+    overflow-x: scroll;
+    width: 115vw;
+}
+.categoriesSec{
+    width: 100%;
+}
+footer{
+    width: 115vw !important;
 }
 }

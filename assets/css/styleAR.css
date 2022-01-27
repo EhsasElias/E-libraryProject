@@ -20,9 +20,11 @@ body{
     display: none;
     
 }
+
 nav{
     background-color: #f9fafc;
     color: #455570;
+    
 }
 nav div{
     display: flex;
@@ -73,7 +75,8 @@ nav div a span{
 .header-bottom{
     display: flex;
     justify-content: center;
-   
+    
+    
     padding: 10px 90px;
     
 }
@@ -360,8 +363,8 @@ aside .priceDetaile{
 .bookRow1{
     
     display: flex;
-   width: 90vw;
-    justify-content: space-between;
+   width: 90%;
+    
     margin: auto;
     
     
@@ -485,12 +488,13 @@ padding: 10px;
 }
 #counter{
     position: absolute;
-    top: 20px;
+    bottom: 0;
    right: 0;
     z-index: 5;
     color: black;
     font-size: 15px;
     width: 100%;
+    
     
 }
 .counterChild button{
@@ -577,8 +581,7 @@ nav{
     display: none;
 }
 .container{
-    width: 115vw;
-  
+    width: 100vw;
 }
 .search-div{
     margin-right: 60%;
